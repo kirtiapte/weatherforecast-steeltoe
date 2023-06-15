@@ -1,0 +1,15 @@
+id: 0c20d29e-39e0-45ba-afe3-8ff99d58d909
+timestamp: 2023-06-15T21:59:12Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-steeltoe
+  source:
+    image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:e531fcd5b89d3c196fe4891bc6c9a98854f809991d24a2c144270205cdd6c280
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  applicationName: Sample
+  projectName: weatherforecast-steeltoe
